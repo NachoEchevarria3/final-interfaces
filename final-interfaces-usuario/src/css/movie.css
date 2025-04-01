@@ -1,0 +1,337 @@
+body {
+    background: #1A1A1A;
+}
+
+/* Header */
+.header {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 60px;
+    z-index: 3;
+    position: relative;
+}
+
+.header__logo {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.header__logo a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color .2s ease-out;
+}
+
+.header__logo a:hover {
+    color: #239823;
+}
+
+.header__menu {
+    display: flex;
+    color: #FFFFFF;
+}
+
+.header__menu-option {
+    padding: 0 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: opacity .2s ease-out;
+    cursor: pointer;
+}
+
+.header__menu-option:hover {
+    opacity: .6;
+}
+
+.header__options {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.header__options-item {
+    cursor: pointer;
+}
+
+.header__options svg {
+    width: 2rem;
+}
+
+.header__avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+}
+
+.header-avatar__picture {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header__avatar img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header__mbl__btn-menu {
+    display: none;
+}
+
+.movie__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    gap: 6rem;
+}
+
+.movie__cover {
+    width: 100%;
+    height: 45rem;
+    background-image: url("/src/images/movie-release-banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.movie__cover__overlay {
+    width: 100%;
+    height: 35rem;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(26, 26, 26, 1), rgba(26, 26, 26, 0));
+}
+
+.movie__info {
+    position: absolute;
+    top: 20%;
+    padding: 0 4rem;
+    z-index: 2;
+    max-width: 43.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.movie__add-info {
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.movie__age-restriction {
+    padding: .2rem .5rem;
+    background: #1A1A1A;
+    border-radius: .2rem;
+}
+
+.movie__description {
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.movie__actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.movie__members {
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.movie__ratings {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.movie__rating-card {
+    width: 15rem;
+    border-radius: .2rem;
+    background: #4A4A4A;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.movie-rating {
+    font-size: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.movie-ratings-row {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.movie-ratings-row span {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+.movie-rating__bar-container {
+    width: 100%;
+    height: .5rem;
+    background: #F3F3F3;
+    border-radius: 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.movie-rating__bar {
+    height: .5rem;
+    border-radius: 20px;
+    background: linear-gradient(to right, #107C10, #239823);
+}
+
+.movie__comments {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.movie-comment-card {
+    width: 37.5rem;
+    background: #4A4A4A;
+    padding: 1rem;
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.movie-comment-card__rating {
+    display: flex;
+    gap: .3rem;
+}
+
+.movie-comment-card__header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.movie-comment-card__add-info {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.movie-comment-card__username {
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.movie-comment-card__date {
+    color: #BCC0BC;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.movie-comment-card__avatar {
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.movie-comment-card__avatar img {
+    width: 100%;
+}
+
+.movie-comment-card__comment {
+    font-size: 1.125rem;
+    color: #FFFFFF;
+}
+
+@media (max-width: 500px) {
+    /* Header */
+    .header {
+        padding: 0 1rem;
+    }
+
+    .header__logo {
+        font-size: 2.25rem;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__options {
+        display: none;
+    }
+
+    .header__mbl__btn-menu {
+        display: block;
+        color: #FFFFFF;
+    }
+
+    /* Movie Cover */
+    .movie__container {
+        gap: 5rem;
+    }
+
+    .movie__cover {
+        height: 37.5rem;
+    }
+
+    .movie__info {
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+
+    .movie__add-info {
+        font-size: 1rem;
+    }
+
+    .movie__description {
+        font-size: 1rem;
+    }
+
+    .movie__members {
+        font-size: 1rem;
+    }
+
+    /* Comments */
+    .movie__ratings {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .movie__comments {
+        padding: 0 1rem;
+    }
+
+    .movie-comment-card {
+        width: 100%;
+    }
+}

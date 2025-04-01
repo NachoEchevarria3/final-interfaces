@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NETFLICS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class='header'>
+        <h2 class='header__logo'>
+            <a href="index.html">NETFLICS</a>
+        </h2>
+    </header>
+    <div class='login__container'>
+        <form id='login-form' class='login__form'>
+            <div class='login__form__header'>
+                <h2 class='login__form-title'>Iniciar Sesión</h2>
+            </div>
+            <input required class='login__form__input' type='email' placeholder='Correo electrónico' autocomplete='email' />
+            <input required class='login__form__input' type='password' placeholder='Contraseña' autocomplete='current-password' />
+            <button class='btn-primary' type='submit'>INICIAR SESIÓN</button>
+            <span class='login__form__btn-forget-password'>¿Olvidaste tu contraseña?</span>
+            <div class='login__form__btn-register'>
+                ¿Eres nuevo en Netflics? <span>Crea una cuenta</span>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
